@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-cyan: #00A8EC;
+  --color-brand-cyan-dark: #0084BA;
+  --color-brand-cyan-light: #E0F5FE;
+  
+  --color-brand-teal-dark: #08546C;
+  --color-brand-teal-deep: #053D4F;
+  --color-brand-teal-light: #E6F5F9;
+
+  --color-brand-peach: #F4BA89;
+  --color-brand-peach-dark: #E6A773;
+  --color-brand-peach-light: #FBEBDD;
+
+  --color-brand-navy: #0F172A;
+  --color-brand-navy-deep: #051026;
+  --color-brand-navy-light: #1E293B;
+  --color-brand-slate: #334155;
+  --color-brand-charcoal: #090D16;
+  
+  --color-brand-dark-card: #222222;
+  --color-brand-dark-card-hover: #2B2B2B;
+
+  --color-brand-gray: #64748B;
+  --color-brand-light-gray: #F8FAFC;
+  --color-brand-border: #E2E8F0;
+  
+  --color-brand-blue: #00A8EC;
+
+  --font-sans: "Plus Jakarta Sans", "Barlow", "Inter", system-ui, -apple-system, sans-serif;
+  --font-heading: "Barlow", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Open Sans", "Inter", system-ui, sans-serif;
+
+  --shadow-subtle: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+  --shadow-premium: 0 12px 32px -10px rgba(0, 168, 236, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --shadow-card-hover: 0 20px 40px -12px rgba(0, 168, 236, 0.14), 0 8px 16px -6px rgba(0, 0, 0, 0.04);
+}
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    color: #0F172A;
+    background-color: #FFFFFF;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Prevent iOS Safari auto-zoom on input focus */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+
+  button, a {
+    touch-action: manipulation;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F1F5F9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00A8EC;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.glass-header {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+}
+
+.corporate-grid-bg {
+  background-image: radial-gradient(#E2E8F0 1px, transparent 1px);
+  background-size: 28px 28px;
+}

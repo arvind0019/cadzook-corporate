@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cArcGradSym" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C0FF" />
+      <stop offset="50%" stop-color="#0080FF" />
+      <stop offset="100%" stop-color="#0050E0" />
+    </linearGradient>
+    <linearGradient id="zUpperGradSym" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38D0FF" />
+      <stop offset="60%" stop-color="#0090FF" />
+      <stop offset="100%" stop-color="#0060E0" />
+    </linearGradient>
+    <linearGradient id="zLowerGradSym" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0088FF" />
+      <stop offset="100%" stop-color="#0044CC" />
+    </linearGradient>
+    <linearGradient id="greenAccentGradSym" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E676" />
+      <stop offset="100%" stop-color="#00A854" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(5, 5)">
+    <!-- Outer Circular 'C' Ring -->
+    <path d="M 115 32 
+             A 62 62 0 1 0 115 118 
+             L 142 108 
+             A 75 75 0 1 1 142 42 
+             Z" 
+          fill="url(#cArcGradSym)" />
+
+    <!-- Upper Z Segment -->
+    <path d="M 44 48 L 110 48 L 100 64 L 68 64 L 105 104 L 75 104 L 44 68 Z" 
+          fill="url(#zUpperGradSym)" />
+
+    <!-- Lower Green Facet in Z corner -->
+    <polygon points="45,95 72,95 48,118 45,108" 
+             fill="url(#greenAccentGradSym)" />
+
+    <!-- Lower Right Z Wing with extension cutting through -->
+    <path d="M 72 74 L 138 74 L 128 90 L 96 90 L 134 116 L 76 116 L 52 144 L 46 138 L 68 116 L 68 106 Z" 
+          fill="url(#zLowerGradSym)" />
+
+    <!-- Cyan Highlight Slice -->
+    <polygon points="56,58 98,58 84,72 48,72" 
+             fill="#70E0FF" opacity="0.85" />
+  </g>
+</svg>

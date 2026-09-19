@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" width="100%" height="100%">
+  <defs>
+    <!-- Gradient for Circular C Arc -->
+    <linearGradient id="cArcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C0FF" />
+      <stop offset="40%" stop-color="#0091EA" />
+      <stop offset="100%" stop-color="#0066EE" />
+    </linearGradient>
+
+    <!-- Gradient for Upper Z -->
+    <linearGradient id="zUpperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#40C4FF" />
+      <stop offset="50%" stop-color="#0091EA" />
+      <stop offset="100%" stop-color="#0277BD" />
+    </linearGradient>
+
+    <!-- Gradient for Lower Z -->
+    <linearGradient id="zLowerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0091EA" />
+      <stop offset="100%" stop-color="#01579B" />
+    </linearGradient>
+
+    <!-- Green Triangle Facet -->
+    <linearGradient id="greenAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E676" />
+      <stop offset="100%" stop-color="#00B0FF" />
+    </linearGradient>
+
+    <!-- Text Gradient for CADZOOK -->
+    <linearGradient id="cadzookTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00A0F6" />
+      <stop offset="60%" stop-color="#0080FF" />
+      <stop offset="100%" stop-color="#0070EE" />
+    </linearGradient>
+
+    <style>
+      .cadzook-wordmark {
+        font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        font-weight: 800;
+        font-size: 58px;
+        letter-spacing: 2px;
+      }
+      .tagline-text {
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        fill: #1E3A5F;
+      }
+    </style>
+  </defs>
+
+  <!-- ================= EMBLEM (C-RING + DUAL Z) ================= -->
+  <g transform="translate(10, 5)">
+    <!-- Outer Circular 'C' Ring -->
+    <path d="M 108 30 
+             A 58 58 0 1 0 108 110 
+             L 134 100 
+             A 70 70 0 1 1 134 40 
+             Z" 
+          fill="url(#cArcGrad)" />
+
+    <!-- Upper Z Body -->
+    <path d="M 38 45 L 102 45 L 92 60 L 62 60 L 98 98 L 70 98 L 38 64 Z" 
+          fill="url(#zUpperGrad)" />
+
+    <!-- Green / Teal Triangle Accent -->
+    <polygon points="40,88 64,88 44,110 40,102" 
+             fill="url(#greenAccentGrad)" />
+
+    <!-- Lower Z Body with bottom tail -->
+    <path d="M 66 70 L 130 70 L 120 85 L 90 85 L 126 110 L 72 110 L 48 136 L 42 130 L 62 110 L 62 100 Z" 
+          fill="url(#zLowerGrad)" />
+
+    <!-- Light Cyan Top Reflection Highlight -->
+    <polygon points="48,54 90,54 78,66 42,66" 
+             fill="#80D8FF" opacity="0.9" />
+  </g>
+
+  <!-- ================= CADZOOK TEXT & TAGLINE ================= -->
+  <g transform="translate(165, 20)">
+    <!-- Wordmark -->
+    <text x="0" y="60" 
+          class="cadzook-wordmark"
+          fill="url(#cadzookTextGrad)">
+      CADZOOK
+    </text>
+
+    <!-- Tagline -->
+    <text x="4" y="92" 
+          class="tagline-text"
+          id="svg-tagline">
+      Your Trusted Workforce Partner
+    </text>
+  </g>
+</svg>
