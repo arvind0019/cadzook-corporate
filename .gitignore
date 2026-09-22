@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# GoDaddy Airo managed config
+.airo/
+.airo
+

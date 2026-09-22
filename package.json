@@ -5,7 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "dev": "node server.js",
+    "dev:local": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "start": "node server.js",
     "serve": "node server.js",
