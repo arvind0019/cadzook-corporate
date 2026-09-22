@@ -1,5 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "startCommand": "npm start",
+  "serveCommand": "node server.js",
+  "startCommand": "node server.js",
   "entrypoint": "server.js"
 }
