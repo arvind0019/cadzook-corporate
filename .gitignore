@@ -27,3 +27,5 @@ dist-ssr
 .airo/
 .airo
 
+# Archives / bundles
+*.zip

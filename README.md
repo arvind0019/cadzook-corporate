@@ -3,6 +3,8 @@
 > **"Your Trusted Workforce Partner"**  
 > **100% Compliance | Accuracy | Transparency**
 
+🌐 **Live Website:** [https://www.cadzook.com](https://www.cadzook.com) *(Status: 🟢 Live & Active)*
+
 Official B2B corporate website for **Cadzook Private Limited**, a premier manpower outsourcing and workforce management company operating across PAN India.
 
 ---
