@@ -19,12 +19,12 @@ interface SlideData {
 const HERO_SLIDES: SlideData[] = [
   {
     id: 0,
-    eyebrow: 'C A D Z O O K',
+    eyebrow: 'C A D Z O O K   P R I V A T E   L I M I T E D',
     headline: 'You Focus On Your Business.',
     headlineAccent: 'We Focus On Your Workforce.',
-    subtitle: 'Where Employee Management meets Powerful Manpower & 100% Statutory Compliance Solutions across PAN India.',
+    subtitle: 'Cadzook Private Limited delivers premier manpower outsourcing, staffing, and 100% statutory compliance solutions across PAN India.',
     image: '/images/hero-slide-1.jpg',
-    alt: 'CADZOOK Corporate Professional with Laptop',
+    alt: 'Cadzook Private Limited Corporate Professional with Laptop',
   },
   {
     id: 1,
